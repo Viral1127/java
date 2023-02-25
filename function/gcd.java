@@ -12,7 +12,7 @@ public class gcd
 	}
 	static void g(int n1,int n2)
 	{
-		int min;float g;
+		int min;float g=0;
 		min=(n1<n2)?(n1):(n2);
 
 		for(int i=1;i<=min;i++)
