@@ -21,7 +21,7 @@ class Bank_Account
 	int account_No;
 	String user_Name;
 	String email;
-	int account_Type;
+	String account_Type;
 	int account_Balance;
 
 
@@ -39,16 +39,16 @@ void getAccountDetails()
 	email = sc.next();
 
 	System.out.println("enter account_Type  : (1) saving  (2) current  (3) student");
-	account_Type = sc.nextInt();
-	 switch(account_Type)
+	int n = sc.nextInt();
+	 switch(n)
 	 {
-	 case 1 : System.out.println("saving");
+	 case 1 : account_Type = "saving";
 	 	break;
 
-	 case 2 : System.out.println("current");
+	 case 2 : account_Type = "current";
 	 	break;
 
-	 case 3 : System.out.println("student");
+	 case 3 : account_Type = "student";
 	 	break;
 	 }
 
